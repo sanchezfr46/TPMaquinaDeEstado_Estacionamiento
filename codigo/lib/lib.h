@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include <string.h>
+#include <stdlib.h>
 typedef enum {
   rojo = 0,
   amarillo = 1
@@ -16,3 +17,7 @@ estados_t f_amarillo(espacios_t);  //funcion que se inicia cuando EsDis=1
 estados_t f_verde(espacios_t);  //funcion que se inicia cuando EsDis>1
 
 estados_t (*fp)(espacios_t); //puntero a funciones
+
+//funciones relacionadas al archivo config.conf:
+char* getKey (char* key);
+espacios_t config (char* conf);
