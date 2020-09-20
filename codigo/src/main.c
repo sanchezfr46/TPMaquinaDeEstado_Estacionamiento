@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <lib.h>
 
 int main() {
@@ -8,6 +7,5 @@ int main() {
     estados_t (*fp[])(espacios_t) = {f_rojo, f_amarillo, f_verde}
     set = f_inicializacion();
     while(1) estado = (*fp[EsDis])(set);
-	
 	return 0;
 }
