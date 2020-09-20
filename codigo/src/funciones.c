@@ -28,7 +28,7 @@ espacios_t config (char* conf){
 					}
 				}
 			}
-			fgets(cadena,40,arc);
+			gets(cadena,40,arc);
 		}while(!feof(arc);
 		fclose (arc);
 		return configuracion;
