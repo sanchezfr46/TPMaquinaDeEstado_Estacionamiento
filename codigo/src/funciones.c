@@ -5,7 +5,7 @@ char* getKey (char* key){
 		i++;
 	}
 	*(key+i)=0;
-	return clave+i+1;
+	return key+i+1;
 
 espacios_t config (char* conf){
 	FILE *arc;
